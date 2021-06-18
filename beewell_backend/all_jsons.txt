@@ -1,0 +1,22 @@
+{
+    "name": "Murtaza",
+    "age": 30,
+    "gender": "Male",
+    "relationship_status": "Married",
+    "children": 2,
+    "address": "G-2, Babji@53, Bohra Layout, Gottigere, Bengaluru",
+    "profession": "Operations Manager",
+    "blood_group": "B +ve",
+    "height": "172 cm",
+    "weight": "102 kg",
+    "blood_pressure": "120/80",
+    "allergies": "None",
+    "sugar_level": "None",
+    "routine_medications": "None",
+    "surgical_history": "None",
+    "other_details": "None",
+    "em_contact_name": "Zainab Lightwala",
+    "em_phone": "8889115647",
+    "is_in_healthcare": "No",
+    "healthcare_catagory": "None"
+}
