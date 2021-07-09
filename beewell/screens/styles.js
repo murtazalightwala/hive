@@ -1,9 +1,8 @@
 
-import {StyleSheet} from 'react-native';
-// import { Dimensions } from 'react-native';
+import {StyleSheet, useWindowDimensions} from 'react-native';
 
-// const windowWidth = Dimensions.get('window').width;
-// const windowHeight = Dimensions.get('window').height;
+const windowWidth = useWindowDimensions().width;
+const windowHeight = useWindowDimensions().height;
 
 const styles = StyleSheet.create({
 
@@ -119,10 +118,43 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     DateInput: {
-        paddingTop: 10,
-        // width: windowWidth/2,
+        marginTop: windowHeight*0.2,
+        paddingTop: windowHeight*0.1,
+        width: windowWidth*0.8,
+        height: windowHeight*0.4,
+        alignSelf: 'center',
     },
-
+    DatePicker: {
+        paddingTop: 10,
+        marginTop: windowHeight*0.4,
+        width: windowWidth,
+        height: windowHeight,
+        flexDirection:'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
+    },
+    GenderPicker: {
+        backgroundColor: 'white',
+        opacity: 0.8,
+    },
+    DatePickerClose: {
+        width: '40%',
+        marginTop: 40,
+        flexDirection:'column',
+        backgroundColor: 'grey',
+        borderRadius: 25,
+        alignContent: 'center',
+        textAlign: 'center',
+        alignSelf: 'center',
+    },
+    DatePickerCloseText: {
+        padding: 10,
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: 'white',
+        alignSelf: 'center',
+    },
 
 
 

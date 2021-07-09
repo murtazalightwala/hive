@@ -93,6 +93,10 @@ DATABASES = {
        'default': {
            'ENGINE': 'djongo',
            'NAME': 'beewelldb',
+           'CLIENT': {
+                'host': 'localhost',
+                'port': 27017,
+            },
        }
    }
 

@@ -14,17 +14,17 @@ class IsinHealthCareView extends React.Component {
             
 
         }
-        this.submit_press = this.submit_press.bind(this);
+        this.next_press = this.next_press.bind(this);
         this.prev_press = this.prev_press.bind(this);
 
     }
 
-      submit_press() {
+      next_press() {
           form_data = {}
           Object.assign(form_data, this.props.route.params)
-          Object.assign(form_data, this.props.route.params)
+          Object.assign(form_data, this.state)
           Alert.alert(JSON.stringify(form_data))
-        this.props.navigation.navigate('Hives');
+        this.props.navigation.navigate('Register User', form_data);
     }
 
     prev_press(){
@@ -46,7 +46,7 @@ render()
                 alignItems: 'center', 
                 justifyContent: 'center',
         }}>
-        <TouchableOpacity activeOpacity = {0.8} style = {styles.NextButton} onPress = {this.submit_press}>
+        <TouchableOpacity activeOpacity = {0.8} style = {styles.NextButton} onPress = {this.next_press}>
             <Text style = {styles.SignInButtonText}>Submit</Text>
         </TouchableOpacity>
         </View>

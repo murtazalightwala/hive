@@ -1,4 +1,5 @@
-from django.db import models
+from djongo import models
+from datetime import date
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -16,7 +17,7 @@ class Patient(models.Model):
     ]
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    age = models.IntegerField()
+    dob = models.DateField(default = date.today)
     gender = models.CharField(choices = Gender_choices, max_length=10)
     relationship_status = models.CharField(choices = Relationship_status_choices, max_length= 20)
     children = models.IntegerField()
