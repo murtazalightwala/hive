@@ -1,6 +1,6 @@
 import React from 'react';
 import {AsyncStorage } from 'react-native';
-import {LoginNavigatorStack, SignUpNavigatorStack}  from './navigators/index.js';
+import {LoginNavigatorStack, LoginNavigatorStack as SignUp, SignUpNavigatorStack}  from './navigators/index.js';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
@@ -17,7 +17,7 @@ class App extends React.Component {
 
 render() {
     return ( 
- this.state.user == null ? (<SignUpNavigatorStack />) : (<LoginNavigatorStack />)
+ this.state.user == null ? (<LoginNavigatorStack />) : (<SignUpNavigatorStack />)
 
 
  
