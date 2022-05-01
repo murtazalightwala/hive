@@ -1,14 +1,13 @@
 import React from 'react';
 import {Hives, SignIn, SignUp, GeneralInfoView, MedicalDetailsView, EmergencyContactView, IsinHealthCareView }  from '../screens/screens_index.js';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
 
  function LoginNavigatorStack() {
     return ( 
-    <NavigationContainer>
-    <Stack.Navigator initialRouteName = 'Sign In' screenOptions = {{headerShown : false}}>       
+    <Stack.Navigator initialRouteName = 'SignIn' screenOptions = {{headerShown : false}}>       
     <Stack.Screen name = 'Sign In' component = {SignIn} />
     <Stack.Screen name = 'Hives' component = {Hives} />
     <Stack.Screen name = 'General Info' component = {GeneralInfoView} />
@@ -18,10 +17,9 @@ import { NavigationContainer } from '@react-navigation/native';
 
 
     </Stack.Navigator>
-    </NavigationContainer>
     );
 }
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default LoginNavigatorStack ; 

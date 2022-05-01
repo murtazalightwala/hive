@@ -1,7 +1,7 @@
 import React from 'react';
 import {GeneralInfoView, MedicalDetailsView, EmergencyContactView, IsinHealthCareView, SignUp, SignIn }  from '../screens/screens_index.js';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
  function SignUpNavigatorStack() {
@@ -19,6 +19,6 @@ import { createStackNavigator } from '@react-navigation/stack';
     );
 }
 
-const SignUpStack = createStackNavigator();
+const SignUpStack = createNativeStackNavigator();
 
 export default SignUpNavigatorStack ; 

@@ -1,30 +1,32 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
+
 import React from 'react';
-import {AsyncStorage } from 'react-native';
-import {LoginNavigatorStack, LoginNavigatorStack as SignUp, SignUpNavigatorStack}  from './navigators/index.js';
-import { createStackNavigator } from '@react-navigation/stack';
+import {Text} from 'react-native';
+import {BottomTabBar, TestNavigatorStack}  from './navigators/nav_index.js';
+import {NavigationContainer} from '@react-navigation/native';
 
-
-const RootNav = createStackNavigator();
 
 class App extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            user: null,
-        }
-    }
+  constructor(props){
+      super(props);
+      this.state = {
+          user: null,
+      }
+  }
 
 
 render() {
-    return ( 
- this.state.user == null ? (<LoginNavigatorStack />) : (<SignUpNavigatorStack />)
+  return   <NavigationContainer >
+  <BottomTabBar />
+</NavigationContainer>
 
-
- 
-
- );
-
-    }
+  }
 }
 
 export default App;

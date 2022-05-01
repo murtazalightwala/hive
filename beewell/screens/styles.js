@@ -1,8 +1,7 @@
 
-import {StyleSheet, useWindowDimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-const windowWidth = useWindowDimensions().width;
-const windowHeight = useWindowDimensions().height;
+
 
 const styles = StyleSheet.create({
 
@@ -118,17 +117,17 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     DateInput: {
-        marginTop: windowHeight*0.2,
-        paddingTop: windowHeight*0.1,
-        width: windowWidth*0.8,
-        height: windowHeight*0.4,
+        marginTop: 50,
+        paddingTop: 25,
+        width: 200,
+        height: 100,
         alignSelf: 'center',
     },
     DatePicker: {
         paddingTop: 10,
-        marginTop: windowHeight*0.4,
-        width: windowWidth,
-        height: windowHeight,
+        marginTop: 50,
+        width: 125,
+        height: 800,
         flexDirection:'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -155,7 +154,90 @@ const styles = StyleSheet.create({
         color: 'white',
         alignSelf: 'center',
     },
+    HomeContainer: {
+        borderColor: 'black',
+        flexDirection: 'column',
+        backgroundColor: 'blue',
 
+    
+    },
+    HomeTopTab: {
+        backgroundColor: 'blue',
+
+    },
+    HomeBody: {
+    },
+    HomeBottomTab: {
+        
+    },
+    Header: {
+        borderStyle: 'solid',
+        borderColor: 'black',
+        flexDirection: 'row',
+        backgroundColor: 'black',
+
+    },
+    Logo: {
+        height: 60,
+        width: 60,
+        borderRadius: 25,
+    },
+
+   
+    Ham: {
+        height: 60,
+        width: 60,
+        padding:8,
+        borderRadius: 25,
+    },
+    SearchText: {
+        marginLeft: 20,
+        paddingLeft: 25,
+    },
+    SearchInput: {
+        width: '70%',
+        height: 60,
+        backgroundColor: '#f9f9f9',
+        borderRadius: 25,
+        margin: 5,
+        justifyContent: 'flex-start',
+        paddingHorizontal: 20,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    DoctorTile: {
+        margin: 5,
+        justifyContent: 'flex-start',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+    },
+    DoctorPhoto: {
+        height: 100,
+        width: 100,
+        justifyContent: 'flex-start',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+    },
+    PrescriptionTile: {
+        height: 200,
+        flexDirection:'row',
+        backgroundColor: 'white',
+        shadowColor: 'lightgrey',
+        padding: 5,
+    },
+    PrescriptionTileFieldNames: {
+        padding: 5,
+        fontSize: 12,
+        fontWeight: 'bold',
+    },
+    PrescriptionTileValues: {
+        padding: 5,
+        fontSize: 12,
+    },
+    DoctorInfo: {
+        maxWidth:"50%",
+        flexDirection: 'column',
+    },
 
 
 });
